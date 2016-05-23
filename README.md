@@ -61,7 +61,7 @@ How can PgLightORM help with PostgreSQL data manipulation?
                     
                     @Override
                     public Connection getConnection() {
-                        return DbConnectorAbstractTest.DbConnector.getInstance().getConnection();
+                        return DbConnector.getInstance().getConnection();
                     }
                 }
                 
