@@ -413,6 +413,7 @@ How can PgLightORM help with PostgreSQL data manipulation?
                 Logger.getAnonymousLogger().log(Level.SEVERE, null, e);
             }
             
-      Close connection in the end:
+            
+5. Close connection in the end:
       
               DbConnector.getInstance().close();
