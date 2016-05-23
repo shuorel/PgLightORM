@@ -412,3 +412,7 @@ How can PgLightORM help with PostgreSQL data manipulation?
             } catch (SQLException e) {
                 Logger.getAnonymousLogger().log(Level.SEVERE, null, e);
             }
+            
+      Close connection in the end:
+      
+              DbConnector.getInstance().close();
