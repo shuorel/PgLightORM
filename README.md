@@ -25,7 +25,7 @@ How can PgLightORM help with PostgreSQL data manipulation?
                         return "localhost";
                     }
                     
-                    //Optional, "5432" in default
+                    //Optional, "5432" by default
                     @Override
                     public String getPort() {
                         return "5432";
