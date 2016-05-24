@@ -322,7 +322,7 @@ Step 3: Declare entity classes with javax.persistence annotations
                 
 Step 4: Basic operations
 
-    Insert a new IndexData record
+Insert a new IndexData record
     
             Orm orm = Orm.getInstance();
             IndexData data = new IndexData();
@@ -330,7 +330,7 @@ Step 4: Basic operations
             orm.insert(data);
             
             
-    Update a StockData record
+Update a StockData record
     
             Orm orm = Orm.getInstance();
             StockData data = new StockData();
@@ -340,7 +340,7 @@ Step 4: Basic operations
             orm.update(data);
             
             
-    Update a StockData record, or insert a new record if not exist:
+Update a StockData record, or insert a new record if not exist:
     
             Orm orm = Orm.getInstance();
             StockData data = new StockData();
@@ -350,7 +350,7 @@ Step 4: Basic operations
             orm.upsert(data);
             
             
-    Get DividendData list associated with a StockData record(OneToMany association):
+Get DividendData list associated with a StockData record(OneToMany association):
     
             Orm orm = Orm.getInstance();
             StockData data = new StockData();
@@ -361,7 +361,7 @@ Step 4: Basic operations
             }
             
             
-    Get StockData record associated with a DividendData record(OneToOne or ManyToOne association):
+Get StockData record associated with a DividendData record(OneToOne or ManyToOne association):
     
             Orm orm = Orm.getInstance();
             DividendData data = new DividendData();
@@ -370,7 +370,7 @@ Step 4: Basic operations
             System.out.println("got: " + data.getStock().getName() );
             
             
-    Get StockData list associated with a IndexData record(ManyToMany association with intermediate table):
+Get StockData list associated with a IndexData record(ManyToMany association with intermediate table):
     
             Orm orm = Orm.getInstance();
             IndexData data = new IndexData();
@@ -382,7 +382,7 @@ Step 4: Basic operations
             }
       
       
-    Fill in an entity object with single select result:
+Fill in an entity object with single select result:
       
             StockData data = new StockData();
             Orm orm = Orm.getInstance();
@@ -397,7 +397,7 @@ Step 4: Basic operations
             }
             
             
-      Fill in an entity list with select results:
+Fill in an entity list with select results:
       
             List<StockData> data = new LinkedList<>();
             Orm orm = Orm.getInstance();
