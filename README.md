@@ -1,7 +1,7 @@
 # PgLightORM
 How can PgLightORM help with PostgreSQL data manipulation?
 
-1. Extend abstract class DbConnectorAbstract to provide database connection configuration:
+Step 1: Extend abstract class DbConnectorAbstract to provide database connection configuration
 
               public class DbConnector extends DbConnectorAbstract {
               
@@ -44,7 +44,7 @@ How can PgLightORM help with PostgreSQL data manipulation?
                 }
 
 
-2. Extend abstract class OrmAbstract to provide connection object:
+Step 2: Extend abstract class OrmAbstract to provide connection object
                 
                 import java.sql.Connection;
                 
@@ -66,7 +66,7 @@ How can PgLightORM help with PostgreSQL data manipulation?
                 }
                 
                 
-3. Declare entity classes with javax.persistence annotations:
+Step 3: Declare entity classes with javax.persistence annotations
 
                 import javax.persistence.*;
                 import java.util.Date;
@@ -320,7 +320,7 @@ How can PgLightORM help with PostgreSQL data manipulation?
                 }
      
                 
-4. Basic operations:
+Step 4: Basic operations
 
     Insert a new IndexData record
     
@@ -414,6 +414,6 @@ How can PgLightORM help with PostgreSQL data manipulation?
             }
             
             
-5. Close connection in the end:
+Step 5: Close connection in the end
       
               DbConnector.getInstance().close();
